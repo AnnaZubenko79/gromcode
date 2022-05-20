@@ -4,10 +4,10 @@ img[alt='Pollution'] {
 img[src$='.jpg'] {
   margin-left: 50px;
 }
-li[data-description*='even'] {
+li[data-description~='even'] {
   background-color: grey;
 }
-li[data-description|='even'] {
+li[data-description*='even'] {
   font-size: 24px;
 }
 a[href^='https://']

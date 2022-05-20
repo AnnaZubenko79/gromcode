@@ -16,6 +16,6 @@ section.to-be-learned ol {
   border: 2px solid blue;
 }
 
-li#special2 {
+#special2 ~ li {
   font-size: 24px;
 }

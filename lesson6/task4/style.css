@@ -13,7 +13,7 @@ section.to-be-learned ol {
   background-color: green;
 }
 #special1 + li > h4 code {
-  border: 5px solid blue;
+  border: 2px solid blue;
 }
 
 li#special2 {

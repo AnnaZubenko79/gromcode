@@ -13,6 +13,6 @@ ul > li:last-child > span {
 ul > li:nth-child(even) > span {
   margin-left: 16px;
 }
-div.paragraphs > p:nth-child(odd) {
+.paragraphs > p:nth-child(3n + 1) {
   background-color: grey;
 }

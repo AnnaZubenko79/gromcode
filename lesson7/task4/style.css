@@ -11,3 +11,6 @@ label {
 a:visited {
   color: grey;
 }
+h1:hover {
+  color: blue;
+}

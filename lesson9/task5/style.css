@@ -32,7 +32,7 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-  /* top: calc(50%); */
+  top: calc(100vh / 2 - 40px);
 }
 .ear {
   width: 40px;

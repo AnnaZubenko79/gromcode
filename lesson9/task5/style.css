@@ -28,11 +28,11 @@
   width: 200px;
   height: 200px;
   background-color: aquamarine;
-  position: relative;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  top: calc(100vh / 2 - 40px);
+  position: absolute;
+  left: 50%;
+  /* right: 0;
+  margin: 0 auto; */
+  top: 50%;
 }
 .ear {
   width: 40px;

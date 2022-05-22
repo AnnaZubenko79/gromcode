@@ -5,7 +5,6 @@ div.block {
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 .block {
   height: 100px;

@@ -50,8 +50,8 @@ div {
 }
 .absolute-parent {
   position: absolute;
-  bottom: 20px;
-  right: 50px;
+  top: 20px;
+  left: 50px;
 }
 .fixed-parent {
   position: fixed;

@@ -1,23 +1,24 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 .header {
   height: 40px;
   background-color: darkturquoise;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
+}
+.navigation {
+  height: 40px;
+  display: flex;
+  align-items: center;
 }
 
-.navigation {
-  color: #fff;
-}
-.nav-list {
-  height: 40px;
-}
 .nav-item {
   margin-left: 16px;
   display: inline-block;
+  color: #fff;
 }
 .content {
   height: 5000px;

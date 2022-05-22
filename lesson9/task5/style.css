@@ -29,10 +29,10 @@
   height: 200px;
   background-color: aquamarine;
   position: absolute;
-  left: 50%;
-  /* right: 0;
-  margin: 0 auto; */
-  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: calc((100% - 200px) / 2);
 }
 .ear {
   width: 40px;

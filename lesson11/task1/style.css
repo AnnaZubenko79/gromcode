@@ -4,8 +4,7 @@
 .block {
   width: 100px;
   height: 100px;
-  background-color: brown;
-  margin: 5px;
+  background-color: coral;
 }
 .block:nth-child(1) {
   display: none;

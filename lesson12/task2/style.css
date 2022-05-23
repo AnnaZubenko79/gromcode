@@ -1,0 +1,19 @@
+h1 {
+  font-size: 74px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 50%;
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div {
+  background-color: coral;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  color: #fff;
+  text-transform: uppercase;
+}

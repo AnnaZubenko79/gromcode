@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+.block {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  margin: 5px;
+}
+.block:nth-child(1) {
+  display: none;
+}
+
+.block:nth-child(2) {
+  visibility: hidden;
+}
+.block:nth-child(3) {
+  visibility: visible;
+}

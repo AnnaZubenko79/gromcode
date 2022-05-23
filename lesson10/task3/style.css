@@ -16,9 +16,6 @@ ul {
 }
 .header {
   height: 40px;
-  position: fixed;
-  left: 0;
-  right: 0;
   width: 100%;
   background-color: yellow;
 }
@@ -48,7 +45,6 @@ ul {
   flex: 1 1 auto;
 }
 .aside {
-  /* padding-top: 40px; */
   background-color: grey;
   flex: 0 0 200px;
   display: flex;
@@ -71,4 +67,5 @@ ul {
 
 .footer__text {
   margin: 0 auto;
+  max-width: fit-content;
 }

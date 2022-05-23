@@ -4,7 +4,6 @@
 .dropdown {
   margin: 16px;
   position: relative;
-  height: 48px;
 }
 .menu-button {
   display: inline-block;
@@ -14,6 +13,7 @@
   font-size: 16px;
   color: #fff;
   cursor: pointer;
+  height: 50px;
 }
 .menu-button:hover {
   opacity: 1;

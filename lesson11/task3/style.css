@@ -4,6 +4,7 @@
 .dropdown {
   margin: 16px;
   position: relative;
+  display: inline-block;
 }
 .menu-button {
   display: inline-block;

@@ -1,8 +1,11 @@
+.image-container {
+  padding: 50px 0;
+}
 .main-image {
   margin: 20px auto 0;
   display: block;
   max-width: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .gallery {
   display: flex;

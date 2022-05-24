@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+.form {
+  margin: 32px;
+}
+.form__box,
+.languages {
+  margin: 8px;
+}

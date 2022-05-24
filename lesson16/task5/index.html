@@ -11,7 +11,111 @@
 </head>
 
 <body>
-
+    <form class="form">
+        <div class="form__box">
+            <label class="label">
+                <input type="text" class="input" name="primaryLanguage" value="HTML" disabled>
+            </label>
+        </div>
+        <div class="form__box">
+            <label class="label">
+                <input type="checkbox" class="input" name="agree">
+            </label>
+        </div>
+        <div class="form__box">
+            <label class="label">
+                <input type="checkbox" class="input" name="like" checked readonly>
+            </label>
+        </div>
+        <div class="form__box">
+            <label class="label">
+                <input type="color" class="input" name="favouriteColor" value="#ff7f50">
+            </label>
+        </div>
+        <div class="form__box">
+            <label class="label">
+                <input type="date" class="input" name="birthDate" value="2021-01-02">
+            </label>
+        </div>
+        <div class="form__box">
+            <label class="label">
+                <input type="datetime-local" class="input" name="birthTime" value="2024-10-04T13:02">
+            </label>
+        </div>
+        <div class="form__box">
+            <label class="label">
+                <input type="email" placeholder="example@domain.com" class="input" name="email" required>
+            </label>
+        </div>
+        <div class="form__box">
+            <label class="label">
+                <input type="file" class="input" name="avatar">
+            </label>
+        </div>
+        <div class="form__box">
+            <label class="label">
+                <input type="month" class="input" name="startLarning" value="2020-01">
+            </label>
+        </div>
+        <div class="form__box">
+            <label class="label">
+                <input type="number" class="input" name="favouriteNumber" value="17">
+            </label>
+        </div>
+        <div class="form__box">
+            <textarea name="story" maxlength="30" rows="5" placeholder="A long time ago..."></textarea>
+        </div>
+        <div class="form__box">
+            <label class="label">
+                <input type="password" class="input" name="password" value="secret">
+            </label>
+        </div>
+        <div class="languages">
+            <input type="radio" id="html" name="language">
+            <label for="html">HTML</label>
+            <input type="radio" id="css" name="language" checked>
+            <label for="css">CSS</label>
+            <input type="radio" id="javascript" name="language">
+            <label for="javascript">JavaScript</label>
+        </div>
+        <div class="form__box">
+            <label class="label">
+                <input type="range" class="input" name="learningProgress" value="30">
+            </label>
+        </div>
+        <div class="form__box">
+            <label class="label">
+                <select name="framework">
+                    <option value="react">React</option>
+                    <option value="jquery">Jquery</option>
+                    <option value="bootstrap">Bootstrap</option>
+                </select>
+            </label>
+        </div>
+        <div class="form__box">
+            <label class="label">
+                <input type="search" class="input" name="search" placeholder="Type first letters..">
+            </label>
+        </div>
+        <div class="form__box">
+            <label class="label">
+                <input type="time" class="input" name="lunchEnd" value="14:01">
+            </label>
+        </div>
+        <div class="form__box">
+            <label class="label">
+                <input type="url" class="input" name="website" placeholder="https://website.com" required>
+            </label>
+        </div>
+        <div class="form__box">
+            <label class="label">
+                <input type="week" class="input" name="birthWeek" value="2021-W51">
+            </label>
+        </div>
+        <div class="form__box">
+            <button type="submit">Save</button>
+        </div>
+    </form>
 </body>
 
 </html>

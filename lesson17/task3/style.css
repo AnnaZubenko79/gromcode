@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+table {
+  margin: 16px;
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+td {
+  width: 50px;
+  height: 50px;
+}
+
+tbody > tr:nth-child(2n + 3) > td:not(:nth-child(10)):nth-child(even) {
+  background-color: #000;
+}
+tbody > tr:not(:nth-child(10)):nth-child(even) > td:nth-child(2n + 3) {
+  background-color: #000;
+}
+
+tbody > tr:not(:first-child, :last-child) > td {
+  border: 1px solid black;
+}
+tbody > tr > td:first-child,
+tbody > tr > td:last-child {
+  border: none;
+}

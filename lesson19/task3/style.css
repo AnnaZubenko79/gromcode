@@ -1,3 +1,27 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.spinner-text {
+  font-family: monospace;
+  font-size: 16px;
+  text-transform: uppercase;
+  animation: blinking 2s linear 0s infinite;
+}
+.rect {
+  background-color: #000;
+  width: 10px;
+  height: 4px;
+  border-radius: 2px;
+  position: relative;
+  animation: blinking 2s linear 0s infinite;
+  animation: moving 2s alternate 0s infinite;
+}
+
 @keyframes moving {
   from {
     left: 0;

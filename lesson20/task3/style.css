@@ -28,8 +28,7 @@
   font-size: 16px;
   text-transform: uppercase;
   text-align: center;
-  opacity: 0;
-  animation: blinking 2s linear unfinite;
+  animation: blinking 2s linear infinite;
 }
 
 @keyframes blinking {

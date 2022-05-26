@@ -9,6 +9,10 @@
   height: 100vh;
 }
 .spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .circle {
   width: 50px;
@@ -23,6 +27,7 @@
   font-family: monospace;
   font-size: 16px;
   text-transform: uppercase;
+  text-align: center;
   animation: blinking 2s linear unfinite;
 }
 

@@ -18,6 +18,8 @@ td,
 th {
   padding: 4px;
   text-align: right;
+}
+tr {
   height: 40px;
 }
 div {

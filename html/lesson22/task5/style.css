@@ -86,11 +86,11 @@ img {
     display: flex;
   }
   .content {
+    width: 80%;
+  }
+  /* .section {
     flex: 1 1 80%;
-  }
-  .section {
-    flex: 1 1 60%;
-  }
+  } */
   .news {
     width: 20%;
   }

@@ -69,7 +69,8 @@ img {
   background-color: #e5e5e5;
   text-align: center;
 }
-@media screen and (min-width: 900px) {
+
+@media screen and (min-width: 600px) {
   .content {
     display: flex;
   }

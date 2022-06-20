@@ -1,5 +1,5 @@
 .block {
-  flex: 1 0 auto;
+  flex: 1;
   min-height: 200px;
   display: flex;
 }
@@ -13,6 +13,7 @@
   background-color: #0ff;
 }
 .block__text {
+  display: block;
   text-transform: lowercase;
   font-family: Verdana, Geneva, sans-serif;
   padding: 8px;

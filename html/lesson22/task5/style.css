@@ -63,6 +63,7 @@ h1 {
 }
 img {
   max-width: 100%;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
 .footer {
   background-color: #e5e5e5;

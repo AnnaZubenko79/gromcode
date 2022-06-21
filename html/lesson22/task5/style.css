@@ -71,8 +71,12 @@ img {
 }
 
 @media screen and (min-width: 600px) {
-  .content {
+  /* .content {
     display: flex;
+  } */
+  .main {
+    display: flex;
+    flex-wrap: wrap;
   }
   .navigation {
     width: 20%;
@@ -80,17 +84,20 @@ img {
   .section {
     width: 80%;
   }
+  .news {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
-  .main {
-    display: flex;
-  }
-  .content {
+  /* .content {
     width: 80%;
-  }
+  } */
   /* .section {
     flex: 1 1 80%;
   } */
+  .section {
+    width: 60%;
+  }
   .news {
     width: 20%;
   }

@@ -7,7 +7,6 @@ const getRandomNumbers = (length, from, to) => {
 };
 
 console.log(getRandomNumbers(5, 5, 22));
-// examples
-getRandomNumbers(5, 1.4, 3.22); // ==> [2, 2, 2, 3, 2]
-getRandomNumbers(5, 1.4, 3.22); // ==> [3, 2, 2, 2, 2]
-getRandomNumbers(5, 1.4, 3.22); // ==> [3, 3, 2, 3, 2]
+console.log(getRandomNumbers(5, 22.2, 30)); // ==> [2, 2, 2, 3, 2]
+console.log(getRandomNumbers(5, 0, 3)); // ==> [3, 2, 2, 2, 2]
+console.log(getRandomNumbers(5, 5, -5)); // ==> [3, 3, 2, 3, 2]

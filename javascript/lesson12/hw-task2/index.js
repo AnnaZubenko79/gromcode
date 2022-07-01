@@ -14,3 +14,5 @@ const cleanTransactionsList = arr => {
 };
 // ---testData
 console.log(cleanTransactionsList(['  1.9 ', '16.4', 17, ' 1 dollar ']));
+
+// arr.map(el => String(el).trim());

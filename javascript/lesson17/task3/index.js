@@ -4,6 +4,15 @@ export function defer(func, ms) {
   };
 }
 
+const user = {
+  name: 'Tom',
+  sayHi() {
+    console.log(`Hi, I am ${this.name}!`);
+  },
+};
+const defferedHi = defer(user.sayHi, 1000);
+defferedHi.call({ name: 'Bob' });
+
 // const sayHi = () => {
 //   console.log('Hi');
 // };
@@ -17,11 +26,3 @@ export function defer(func, ms) {
 // };
 // const defferedSum = defer(sum, 1000);
 // defferedSum(1, 4);
-const user = {
-  name: 'Tom',
-  sayHi() {
-    console.log(`Hi, I am ${this.name}!`);
-  },
-};
-const defferedHi = defer(user.sayHi, 1000);
-defferedHi.call({ name: 'Bob' });

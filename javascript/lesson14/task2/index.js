@@ -1,25 +1,45 @@
-const createMessenger = () => {
-  let message = 'Just learn it';
-  let sender = 'Gromcode';
+// const createMessenger = () => {
+//   let message = 'Just learn it';
+//   let sender = 'Gromcode';
 
+//   function sendMessage(name) {
+//     console.log(`Hello, ${name}! ${message}! This message was sent by ${sender}`);
+//   }
+//   function setMessage(text) {
+//     message = text;
+//   }
+//   function setSender(text) {
+//     sender = text;
+//   }
+
+//   return {
+//     setMessage,
+//     setSender,
+//     sendMessage,
+//   };
+// };
+
+// export default createMessenger;
+
+export default function createMessenger() {
+  const message = 'Just learn it';
+  const sender = 'Gromcode';
+
+  function setMessage(message) {
+    message = message;
+  }
+  function setSender(sender) {
+    sender = sender;
+  }
   function sendMessage(name) {
     console.log(`Hello, ${name}! ${message}! This message was sent by ${sender}`);
   }
-  function setMessage(text) {
-    message = text;
-  }
-  function setSender(text) {
-    sender = text;
-  }
-
   return {
+    sendMessage,
     setMessage,
     setSender,
-    sendMessage,
   };
-};
-
-export default createMessenger;
+}
 const messanger1 = createMessenger();
 messanger1.sendMessage('Anna'); // ===> Hello, Anna! Just learn it! This message was sent by Gromcode
 

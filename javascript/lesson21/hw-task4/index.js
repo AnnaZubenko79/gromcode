@@ -5,7 +5,7 @@
 // setTitle('I am best developer');
 
 export function setTitle(text) {
-  const title = document.querySelector('.title');
-  title.textContent = text;
+  const titleElem = document.querySelector('.title');
+  titleElem.textContent = text;
 }
 setTitle('hi');

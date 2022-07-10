@@ -1,6 +1,11 @@
+// export function clearList() {
+//   const categoriesElem = document.querySelector('.categories');
+//   categoriesElem.innerHTML = '';
+
+//   return categoriesElem;
+// }
+// clearList();
 export function clearList() {
-  const categoriesElem = document.querySelector('.categories');
-  categoriesElem.innerHTML = '';
-  return categoriesElem;
+  return (document.querySelector('.categories').innerHTML = '');
 }
-clearList();
+// clearList();

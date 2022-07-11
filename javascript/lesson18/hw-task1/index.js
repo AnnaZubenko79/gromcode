@@ -1,3 +1,12 @@
+// function saveFuncCalls(func) {
+//   const argOfArray = [];
+//   return function withMemory(...arg) {
+//     argOfArray.push(...arg);
+//     withMemory.callsHistory = argOfArray;
+//     return func.apply(this, arg);
+//   };
+// }
+
 // export function saveFuncCalls(func) {
 //   function withMemory() {
 //     withMemory.callsHistory.push([...arguments]);
@@ -6,6 +15,7 @@
 //   withMemory.callsHistory = [];
 //   return withMemory;
 // }
+
 function saveFuncCalls(func) {
   const argOfArray = [];
   function withMemory(...arg) {

@@ -47,10 +47,11 @@ const removeList = () => {
   pElem.removeEventListener('click', logGreenP);
   spanElem.removeEventListener('click', logGreenSpan);
 
-  divElem.removeEventListener('click', logGreyDiv, { capture: true });
+  divElem.removeEventListener('click', logGreyDiv, true);
   pElem.removeEventListener('click', logGreyP, true);
   spanElem.removeEventListener('click', logGreySpan, true);
 };
 clearBtn.addEventListener('click', clearEventList);
 removeBtn.addEventListener('click', removeList);
 attachBtn.addEventListener('click', attachList);
+attachList();

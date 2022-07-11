@@ -18,33 +18,29 @@ const clearBtn = document.querySelector('.clear-btn');
 const removeBtn = document.querySelector('.remove-handlers-btn');
 const attachBtn = document.querySelector('.attach-handlers-btn');
 
-const clearEventList = () => {
-  eventsList.innerHTML = '';
-};
-clearBtn.addEventListener('click', clearEventList);
-
 const logTarget = (text, color) => {
   eventsList.innerHTML += `<span style="color: ${color};  margin-left: 8px">${text}</span>`;
 };
 
-const logGreenDiv = logTarget.bind(null, 'DIV', 'green');
-const logGreenP = logTarget.bind(null, 'P', 'green');
-const logGreenSpan = logTarget.bind(null, 'SPAN', 'green');
+const clearEventList = () => {
+  eventsList.innerHTML = '';
+};
 
-const logGreyDiv = logTarget.bind(null, 'DIV', 'grey');
-const logGreyP = logTarget.bind(null, 'P', 'grey');
-const logGreySpan = logTarget.bind(null, 'SPAN', 'grey');
+const logGreenDiv = logTarget.bind(null, 'div', 'green');
+const logGreyDiv = logTarget.bind(null, 'div', 'grey');
+const logGreenP = logTarget.bind(null, 'p', 'green');
+const logGreyP = logTarget.bind(null, 'p', 'grey');
+const logGreenSpan = logTarget.bind(null, 'span', 'green');
+const logGreySpan = logTarget.bind(null, 'span', 'grey');
 
 const attachList = () => {
   divElem.addEventListener('click', logGreenDiv);
-  pElem.addEventListener('click', logGreenP);
-  spanElem.addEventListener('click', logGreenSpan);
-
   divElem.addEventListener('click', logGreyDiv, { capture: true });
+  pElem.addEventListener('click', logGreenP);
   pElem.addEventListener('click', logGreyP, true);
+  spanElem.addEventListener('click', logGreenSpan);
   spanElem.addEventListener('click', logGreySpan, true);
 };
-attachBtn.addEventListener('click', attachList);
 
 const removeList = () => {
   divElem.removeEventListener('click', logGreenDiv);
@@ -55,4 +51,6 @@ const removeList = () => {
   pElem.removeEventListener('click', logGreyP, true);
   spanElem.removeEventListener('click', logGreySpan, true);
 };
+clearBtn.addEventListener('click', clearEventList);
 removeBtn.addEventListener('click', removeList);
+attachBtn.addEventListener('click', attachList);

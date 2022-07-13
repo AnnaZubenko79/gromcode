@@ -9,5 +9,6 @@ npm-debug.*
 node_modules/
 package-lock.json
 javascript/lesson17/theory/index.html
+javascript/lesson23/hw-task1.1
 package-lock.json
 javascript/lesson17/theory/index.js

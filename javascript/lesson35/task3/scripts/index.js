@@ -3,7 +3,7 @@ import { renderUserData } from './usersTasks.js';
 import { renderRepos, cleanReposList } from './repo.js';
 import { showSpinner, hideSpinner } from './spin.js';
 
-const defaultAvatar = 'https://avatars3.githubusercontent.com/u10001';
+const defaultAvatar = 'https://avatars3.githubusercontent.com/u10001.';
 
 const defaultUser = {
   avatar_url: defaultAvatar,

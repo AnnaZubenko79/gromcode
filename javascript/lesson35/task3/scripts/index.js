@@ -1,7 +1,7 @@
-import { fetchUserData, fetchRepositiries } from './getwayTasks.js';
-import { renderUserData } from './usersTasks.js';
-import { renderRepos, cleanReposList } from './repo.js';
-import { showSpinner, hideSpinner } from './spin.js';
+import { fetchUserData, fetchRepositiries } from './gateway.js';
+import { renderUserData } from './user.js';
+import { renderRepos, cleanReposList } from './repos.js';
+import { showSpinner, hideSpinner } from './spinner.js';
 
 const defaultAvatar = 'https://avatars3.githubusercontent.com/u10001.';
 

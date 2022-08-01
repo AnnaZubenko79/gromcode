@@ -6,5 +6,3 @@ export const parseUser = jsonString => {
     return null;
   }
 };
-// console.log(parseUser('{ "name": "Tom" }'));
-// console.log(parseUser('{ "name": "Tom" '));

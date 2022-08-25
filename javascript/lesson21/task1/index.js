@@ -6,7 +6,6 @@ export const tasks = [
   { text: 'Buy meat', done: true },
 ];
 
-// const tasks = ['Buy milk', 'Pick up Tom from airport', 'Visit party', 'Visit doctor', 'Buy meat'];
 const renderTasks = tasksList => {
   const listElem = document.querySelector('.list');
 
@@ -15,14 +14,15 @@ const renderTasks = tasksList => {
     .map(({ text, done }) => {
       const listItemElem = document.createElement('li');
       listItemElem.classList.add('list__item');
+      const checkbox = document.createElement('input');
+      checkbox.setAttribute('type', 'checkbox');
+      checkbox.checked = done;
+      checkbox.classList.add('list__item-checkbox');
+
       if (done) {
         listItemElem.classList.add('list__item_done');
       }
-      const checkboxElem = document.createElement('input');
-      checkboxElem.setAttribute('type', 'checkbox');
-      checkboxElem.checked = done;
-      checkboxElem.classList.add('list__item-checkbox');
-      listItemElem.append(checkboxElem, text);
+      listItemElem.append(checkbox, text);
       return listItemElem;
     });
   listElem.append(...listItemsElems);

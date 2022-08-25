@@ -1,12 +1,24 @@
+// export const callbackPrompt = {
+//   message: 'Tell me your number',
+//   showPrompt() {
+//     const phoneNumber = prompt(this.message);
+//   },
+//   showDeferredPrompt(ms) {
+//     setTimeout(() => this.showPrompt(), ms);
+//   },
+// };
+
+// console.log(callbackPrompt.showPrompt());
+
 export const callbackPrompt = {
-  message: 'Tell me your number',
+  message: 'Hello',
   showPrompt() {
     const phoneNumber = prompt(this.message);
   },
   showDeferredPrompt(ms) {
-    setTimeout(() => this.showPrompt(), ms);
+    setTimeout(() => {
+      return this.showPrompt();
+    }, ms);
   },
 };
-
-// console.log(callbackPrompt.showPrompt());
 console.log(callbackPrompt.showDeferredPrompt(1000));

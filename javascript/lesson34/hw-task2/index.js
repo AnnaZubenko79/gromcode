@@ -7,21 +7,17 @@ const onValid = () => {
   if (!formElem.reportValidity()) {
     return submitBtnElem.setAttribute('disabled', true);
   }
-  return submitBtnElem.setAttribute('disabled');
+  return submitBtnElem.removeAttribute('disabled');
 };
 
-const onsendData = event => {
+const onSendData = event => {
   event.preventDefault();
-  const formData = [...new FormData(formElem)].reduce(
-    (acc, [field, value]) => ({ ...acc, [field]: value }),
-    {},
-  );
   fetch(baseUrl, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json;charset=utf-8',
     },
-    body: JSON.stringify(formData),
+    body: JSON.stringify(Object.fromEntries(new FormData(formElem))),
   })
     .then(response => response.json())
     .then(userData => {
@@ -30,5 +26,5 @@ const onsendData = event => {
     });
 };
 
-formElem.addEventListener('submit', onsendData);
+formElem.addEventListener('submit', onSendData);
 formElem.addEventListener('input', onValid);
